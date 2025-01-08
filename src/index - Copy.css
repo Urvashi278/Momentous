@@ -1,0 +1,64 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+@font-face {
+    font-family: Impoerted1;
+    src: url('./Fonts/Gilroy-MediumItalic.ttf');
+}
+@font-face {
+    font-family: Impoerted2;
+    src: url('./Fonts/Gilroy-SemiBoldItalic.ttf');
+}
+@font-face {
+    font-family: Impoerted3;
+    src: url('./Fonts/Yellowtail-Regular.ttf');
+}
+
+.fonthead{
+   font-family: Impoerted1;
+   font-weight: 100;
+}
+.paratext{
+    font-family: Impoerted2;
+}
+.specialtext{
+    font-family: Impoerted3;
+}
+.whatsapp{
+    position: fixed;
+    z-index: 100;
+    width: 60px;
+    height: 60px;   
+    left: 20px;
+   bottom: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #735401;
+    background-color: #735401;
+    right:10px;
+    box-shadow: 2px 2px 2px 2px #ffffff;
+    border-radius: 100%;
+    
+    scale: 60%;
+    padding: 30px;
+    color: white !important;
+    fill: white !important;
+    stroke: white !important;
+}
+@media only screen and (min-width: 600px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display:  none;
+    }
+  }
+.clip{
+    clip-path: polygon(0 5%, 88% 3%, 100% 100%, 0% 100%);
+}
